@@ -1,0 +1,33 @@
+<svg width="1000" height="140" viewBox="0 0 1000 140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0f0c29"/>
+      <stop offset="50%" stop-color="#302b63"/>
+      <stop offset="100%" stop-color="#24c6dc"/>
+    </linearGradient>
+    <clipPath id="round"><rect width="1000" height="140" rx="14"/></clipPath>
+    <style>
+      .msg { font: 600 18px 'Courier New', monospace; fill: #ffffff; opacity: 0; }
+      .m1 { animation: fade 8s infinite 0s; }
+      .m2 { animation: fade 8s infinite 4s; }
+      @keyframes fade {
+        0% { opacity: 0; }
+        6% { opacity: 1; }
+        44% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+    </style>
+  </defs>
+  <g clip-path="url(#round)">
+    <rect width="1000" height="140" fill="url(#bg)"/>
+    <text class="msg m1" x="500" y="62" text-anchor="middle">"First, solve the problem. Then, write the code."</text>
+    <text class="msg m2" x="500" y="62" text-anchor="middle">Thanks for visiting! Drop a star if you like my work</text>
+    <path d="M0 105 Q 125 80 250 105 T 500 105 T 750 105 T 1000 105 T 1250 105 T 1500 105 V140 H0 Z" fill="#ffffff" fill-opacity="0.14">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-500 0" dur="8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M0 120 Q 125 100 250 120 T 500 120 T 750 120 T 1000 120 T 1250 120 T 1500 120 V140 H0 Z" fill="#ffffff" fill-opacity="0.2">
+      <animateTransform attributeName="transform" type="translate" from="-500 0" to="0 0" dur="6s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
